@@ -11,7 +11,6 @@ namespace EmployeeWageComputation
         const int IS_FULL_TIME = 1;
         public void EmployeeAttendance()
         {
-
             Random random = new Random();
             int EmpCheck = random.Next(0, 2);
 
