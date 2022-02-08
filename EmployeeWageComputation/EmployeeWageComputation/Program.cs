@@ -14,6 +14,7 @@ namespace EmployeeWageComputation
             EmployeeWage employee = new EmployeeWage();
             employee.EmployeeAttendance();
             employee.DailyWage();
+            employee.PartTimeEmpWage();
             Console.ReadLine();
         }
     }
