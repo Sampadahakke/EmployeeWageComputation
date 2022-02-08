@@ -26,7 +26,9 @@ namespace EmployeeWageComputation
             }
             Console.ReadLine();
         }
-
+        
+        
+        //Calculation of Daily Wage
         public void DailyWage()
         {
             int EmpHrs = 0;
