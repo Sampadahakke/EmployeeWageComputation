@@ -28,11 +28,12 @@ namespace EmployeeWageComputation
             Console.ReadLine();
         }
 
+
+        //Calculation of Daily Wage
         public void DailyWage()
         {
             int EmpHrs = 0;
             int EmpWage = 0;
-
             Random random = new Random();
             int EmpCheck = random.Next(0, 2);
 
@@ -51,6 +52,8 @@ namespace EmployeeWageComputation
             Console.ReadLine();
         }
 
+
+        //Calculation of Part Time Wage
         public void PartTimeEmpWage()
         {
             int EmpHrs = 0;
@@ -74,6 +77,34 @@ namespace EmployeeWageComputation
             Console.WriteLine("Employeewage = " + EmpWage);
             Console.ReadLine();
 
+        }
+
+
+        // Calculation of Employee Wage Using Switch Case
+        public void SwitchCase()
+        {
+            int EmpHrs = 0;
+            int EmpWage = 0;
+            Random random = new Random();
+            int EmpCheck = random.Next(0, 3);
+
+            switch (EmpCheck)
+            {
+                case IS_PART_TIME:
+                    EmpHrs = 4;
+                    break;
+
+                case IS_FULL_TIME:
+                    EmpHrs = 8;
+                    break;
+
+                default:
+                    EmpHrs = 0;
+                    break;
+            }
+            EmpWage = EmpHrs * Emp_Rate_Per_Hour;
+            Console.WriteLine("Employee Wage = " + EmpWage);
+            Console.ReadLine();
         }
     }
 }

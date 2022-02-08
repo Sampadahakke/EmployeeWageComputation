@@ -15,6 +15,7 @@ namespace EmployeeWageComputation
             employee.EmployeeAttendance();
             employee.DailyWage();
             employee.PartTimeEmpWage();
+            employee.SwitchCase();
             Console.ReadLine();
         }
     }
