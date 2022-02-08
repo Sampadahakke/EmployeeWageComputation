@@ -32,7 +32,6 @@ namespace EmployeeWageComputation
         {
             int EmpHrs = 0;
             int EmpWage = 0;
-
             Random random = new Random();
             int EmpCheck = random.Next(0, 2);
 
