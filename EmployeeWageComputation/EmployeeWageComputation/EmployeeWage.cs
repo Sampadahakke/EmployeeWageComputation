@@ -27,7 +27,9 @@ namespace EmployeeWageComputation
             }
             Console.ReadLine();
         }
-
+        
+        
+        //Calculation of Daily Wage
         public void DailyWage()
         {
             int EmpHrs = 0;
@@ -50,6 +52,8 @@ namespace EmployeeWageComputation
             Console.ReadLine();
         }
 
+        
+        //Calculation of Part Time Wage
         public void PartTimeEmpWage()
         {
             int EmpHrs = 0;
