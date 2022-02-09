@@ -12,11 +12,8 @@ namespace EmployeeWageComputation
         {
             Console.WriteLine("Welcome to Employee Wage Computation");
             EmployeeWage employee = new EmployeeWage();
-            employee.EmployeeAttendance();
-            employee.DailyWage();
-            employee.PartTimeEmpWage();
-            employee.SwitchCase();
-            employee.MonthlyEmpWage();
+            employee.Condition();
+            employee.Display();
             Console.ReadLine();
         }
     }
