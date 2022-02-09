@@ -8,8 +8,10 @@ namespace EmployeeWageComputation
 {
     internal class EmployeeWage
     {
+        const int IS_PRESENT = 1;
+        const int IS_ABSENT = 0;
         const int IS_FULL_TIME = 1;
-        const int IS_PART_TIME = 2;
+        const int IS_PART_TIME = 0;
         const int Emp_Rate_Per_Hour = 20;
         public void EmployeeAttendance()
         {
@@ -17,7 +19,7 @@ namespace EmployeeWageComputation
             Random random = new Random();
             int EmpCheck = random.Next(0, 2);
 
-            if (EmpCheck == IS_FULL_TIME)
+            if (EmpCheck == IS_PRESENT)
             {
                 Console.WriteLine("Employee is present");
             }
@@ -36,7 +38,7 @@ namespace EmployeeWageComputation
             int EmpHrs = 0;
             int EmpWage = 0;
             Random random = new Random();
-            int EmpCheck = random.Next(0, 3);
+            int EmpCheck = random.Next(0, 2);
 
             switch (EmpCheck)
             {
